@@ -1,7 +1,5 @@
 import math
 
-# ===== ВЫЧИСЛЕНИЯ (по заданию) =====
-
 def IsPrime(n):
     """Проверяет, является ли число n простым."""
     if n < 2:
@@ -29,9 +27,6 @@ def PrimeRange(a, b):
             result.append(x)
     return result
 
-
-# ===== ВВОД =====
-
 def vvod():
     """Спрашивает у пользователя данные и возвращает их."""
     print("\n1 - Проверить, простое ли число")
@@ -53,9 +48,6 @@ def vvod():
     else:
         return "0", None
 
-
-# ===== ВЫВОД =====
-
 def vyvod(vibor, rezultat):
     """Печатает результат в зависимости от выбора."""
     if vibor == "1":
@@ -68,8 +60,6 @@ def vyvod(vibor, rezultat):
     elif vibor == "3":
         print("Простые числа в диапазоне:", rezultat)
 
-
-# ===== ГЛАВНАЯ ПРОГРАММА =====
 
 while True:
     vibor, dannye = vvod()
